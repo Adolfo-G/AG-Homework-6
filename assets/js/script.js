@@ -20,7 +20,7 @@ history()
 
 function main(){
     city=inputEl.value
-    cityData.push(city)
+    if(city!==""){cityData.push(city)}
     inputEl.value=""
     localStorage.setItem("city",JSON.stringify(cityData))
     if(city!==""){history()}
@@ -142,6 +142,7 @@ function history(){
 }
 
 clearEl.addEventListener("click",function(){
+    cityData=[]
     localStorage.clear()
     if(historyEl.hasChildNodes()){
         while (historyEl.firstChild) {
