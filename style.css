@@ -1,0 +1,46 @@
+h1{
+    color: white;
+    background-image: linear-gradient(to left, rgb(25, 25, 122) ,rgb(45,45,255));
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    mix-blend-mode:overlay;
+}
+.current-weather-card{
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+}
+.weather-page{
+    width: 70%;
+    float:right;
+    padding: 5px;
+}
+.city-name{
+    font-weight: bold;
+}
+
+.submit-search{
+    float: left;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.search-btn{
+    width: 100%;
+    padding:2%;
+    background-color: rgb(59, 160, 255);
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    border-color: unset;
+}
+
+.search-btn:hover{
+    cursor:pointer;
+    opacity: 85%;
+}
