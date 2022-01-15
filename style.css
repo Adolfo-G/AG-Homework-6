@@ -105,3 +105,9 @@ div img{
     padding: 2px;
     border-radius: 5px;
 }
+
+.history-Btn{
+    width: 100%;
+    margin-top: 5px;
+    font-size: large;
+}

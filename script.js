@@ -11,12 +11,19 @@ var windEl=document.querySelector("#wind")
 var humidityEl=document.querySelector("#humidity")
 var uvEl=document.querySelector("#uv")
 var forecastContainerEl=document.querySelector(".five-day-forecast")
+var historyEl=document.querySelector("#history")
+var cityData=[]
 
 searchEl.addEventListener("click",main)
 
+history()
+
 function main(){
     city=inputEl.value
+    cityData.push(city)
     inputEl.value=""
+    localStorage.setItem("city",JSON.stringify(cityData))
+    if(city!==""){history()}
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
     .then(function(response){
         return response.json()
@@ -111,4 +118,34 @@ function main(){
 
 }
 
+function history(){
+    if(historyEl.hasChildNodes()){
+        while (historyEl.firstChild) {
+            historyEl.removeChild(historyEl.lastChild)
+        }
+    }
+    var retrievedData= JSON.parse(localStorage.getItem("city"));
+    if(retrievedData!=null){
+        cityData=retrievedData
+        for(var i=0;i<retrievedData.length;i++){
+            var historyBtnEl=document.createElement("button")
+            historyBtnEl.textContent=retrievedData[i]
+            historyBtnEl.classList.add("history-Btn")
+            
+            historyBtnEl.addEventListener("click",function(){
+                inputEl.value=this.textContent
+                main()
+            })
+            historyEl.appendChild(historyBtnEl)
+        }
+    }
+}
 
+clearEl.addEventListener("click",function(){
+    localStorage.clear()
+    if(historyEl.hasChildNodes()){
+        while (historyEl.firstChild) {
+            historyEl.removeChild(historyEl.lastChild)
+        }
+    }
+})
