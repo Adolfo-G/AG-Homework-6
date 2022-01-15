@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <div id="submit-search" class="submit-search">
+        <h2 class="search-city-txt">Search For City:</h2>
+        <input id="input" placeholder="Los Angeles" type="text">
+        <br>
+        <button id="search-btn" class="search-btn">Search</button>
+        <button id="clear" class="search-btn">Clear</button>
+        <br>
+        <hr>
+        <div id="history" class="history">
+
+        </div>
+    </div>
+    <div class="weather-page">
+        <div class="current-weather-card">
+            <p class="weather-main-header main-margin"><span id="city-name" class="city-name"></span> <span id="day"></span>  <span ><img onerror="this.style.display='none'" id="condition-1" src="" alt=""></span></p>
+            <p class="main-margin">Temp: <span id="temp"></span></p>
+            <p class="main-margin">Wind: <span id="wind"></span></p>
+            <p class="main-margin">Humidity: <span id="humidity"></span></p>
+            <p class="main-margin">UV Index: <span id="uv"></span></p>
+        </div>
+
+        <h2 class="five-day-forecast-txt">5 Day Forecast</h2>
+
+        <div class="five-day-forecast">
+            
+        </div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
