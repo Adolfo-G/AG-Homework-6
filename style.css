@@ -7,6 +7,7 @@ h1{
     font-size: 2em;
     mix-blend-mode:overlay;
 }
+
 .current-weather-card{
     border-width: thin;
     border-color: black;
@@ -43,4 +44,64 @@ h1{
 .search-btn:hover{
     cursor:pointer;
     opacity: 85%;
+}
+
+.five-day-cards{
+    color: white;
+    background-color: rgb(21, 44, 70);
+    width: 17%;
+    margin-top: 2%;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.five-day-forecast{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.five-day-forecast-txt{
+    font-size: 1.5em;
+}
+
+#condition-1{
+    height: 1em;
+    width: 100%;
+}
+
+.weather-main-header{
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div img{
+    width: 70%;
+}
+
+.search-city-txt{
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.main-margin{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.favorable{
+    background-color: rgb(0, 197, 0);
+}
+.moderate{
+    background-color: yellow;
+}
+.severe{
+    background-color: red;
+}
+
+#uv{
+    padding: 2px;
+    border-radius: 5px;
 }
