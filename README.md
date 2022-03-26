@@ -1,5 +1,30 @@
-The following is an application witch allows you to enter a city name and it retrieves a 5 day forecast of the given city. Searched city results will be displayed as clickable buttons that once clicked will redisplay weather data. This application uses the OpenWeatherMap api and the Moment api.
 
-The application is deployed here: https://adolfo-g.github.io/AG-Homework-6/
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  # Weather Forecast
+  ## Description
 
-![](assets/image/preview.jpeg)
+  - Motivation
+    This app functions to provide a user with a five day forecast for a given users city.
+
+  - Functionality
+    By searching the name of a city, weather data for the day as well as the five day forecast will appear. the user also has the option of looking at their search history and reselecting a previous search. This application uses OpenWeatherMap API
+
+![](assets/image/preview.jpeg)    
+
+  ## Table of Contents
+  * [Installation](#installation)
+  * [License](#license)
+  * [Questions](#questions)
+
+  ## Installation
+  The deployed application can be accessed here: https://adolfo-g.github.io/AG-Homework-6/
+ 
+  ## License
+ 
+  https://opensource.org/licenses/MIT
+  
+  ## Questions
+  -For any questions or concerns please reach out to me at
+    github:  https://github.com/Adolfo-g
+    email:  adolfog5545@gmail.com
+    
