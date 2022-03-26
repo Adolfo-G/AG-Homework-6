@@ -1,11 +1,7 @@
 
-<<<<<<< HEAD
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   # Weather Forecast
   ## Description
-=======
-The application is deployed here: https://adolfo-g.github.io/Weather-Forecast/
->>>>>>> 9bdaf45d3a44d0d0a0e70a6c222f49b6a42bc1c5
 
   - Motivation
     This app functions to provide a user with a five day forecast for a given users city.
