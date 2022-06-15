@@ -17,7 +17,7 @@
   * [Questions](#questions)
 
   ## Installation
-  The deployed application can be accessed here: https://adolfo-g.github.io/AG-Homework-6/
+  The deployed application can be accessed here: https://adolfo-g.github.io/Weather-Forecast/
  
   ## License
  
